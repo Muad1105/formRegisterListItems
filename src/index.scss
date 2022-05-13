@@ -84,3 +84,22 @@ body {
         }
     }
 }
+
+.user-list {
+    table {
+        thead {
+            tr {
+                td {
+                    padding-right: 40px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+}
