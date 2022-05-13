@@ -23,8 +23,10 @@ const showError = (msg: string): void => {
     message.error(msg);
 };
 
-const regexEmail: RegExp =
+export const regexUserName: RegExp = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}/;
+export const regexEmail: RegExp =
     /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+export const regexPhone: RegExp = /^\d{10}$/;
 
 const toPascalCase = (text: string): string => {
     if (!text) {
@@ -55,7 +57,6 @@ export default {
     showSuccess,
     showInfo,
     showError,
-    regexEmail,
     getLanguage,
     setLanguage,
     toPascalCase,
